@@ -1,0 +1,35 @@
+- 개요
+    - nodejs
+    -비동기 이벤트 주로 사용하는 방식
+    -백엔드에서 서버사이드 개발부터, 리액트 등등 클라이언트 사이드 개발의 생태계를 제공하는 형태
+    -Nodejs의 백엔드 스타일은 Ruby 이벤트 머신을 참고했고, Python의 Flask 계열과 유사점
+    -cluster를 이용하면 다수의 코어에서 로드 밸런싱을 수행하면서 백엔드 서버의 업무를 훌륭하게 수행
+
+-개발환경 구축
+    - https://nodejs.org
+    - 패키지 관리자
+        -NPM
+        - 이 세상에 존재하는 모든 javascript 기반 패키지들을 찾고, 사용할 수 있는 사이트
+            -npmjs.com
+        - 순수 nodejs 프로그램 위한 다양한 모듈들을 지원해주고, 이를 이용하여 서버용 패키지, 기타 다양한 분야의
+          패키지들을 지원해주고 있다.
+        - 리액트는 nodejs 생태계를 기반으로 하여 새로운 생태계를 만든 것이다.
+    -설치 목록
+        -express: 노드 기반으로 백엔드 구성시 가장 많이 사용되는 패키지
+        -npm install express -g             
+        -npm install express-generator -g
+        -yarn: 리액트용 패키지 관리자
+        -npm install yarn -g
+-프로젝트 생성
+    -순수한 nodejs 기반 생성
+        -$mkdir test
+        - cd test
+        - 프로젝트 초기화.
+            - npm init
+            - 위의 명령이 수행되면 package.json이 생긴다.
+            - package.json은 프로젝트를 볼 때 가장 먼저 살펴볼 파일임.
+            - 프로젝트 전반에 걸친 설정, 명령, 
+    -express 기반 생성
+        -mkdir web
+        -cd web
+        -express -express
